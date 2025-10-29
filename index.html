@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="mode-buttons">
+        <button id="clockMode" class="mode-btn active">Clock</button>
+        <button id="stopwatchMode" class="mode-btn">Stopwatch</button>
+        <button id="alarmMode" class="mode-btn">Alarm</button>
+    </div>
+
+    <div class="display">
+        <span id="displayText">00:00:00</span>
+    </div>
+
+    <!-- ストップウォッチ -->
+    <div id="stopwatchControls" class="controls hidden">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- アラーム -->
+    <div id="alarmControls" class="controls hidden">
+        <input type="time" id="alarmTime">
+        <button id="setAlarmBtn">Set</button>
+        <p id="alarmStatus"></p>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
